@@ -45,3 +45,140 @@ body {
     max-width: var(--anchomax);
     margin: 0 auto;
 }
+
+
+
+
+
+/*Inicio header nav top*/
+
+header .navtop {
+    background-color: var(--colorsecundario);
+    padding: 20px 10px;
+
+}
+
+header .navtop a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .navtop a i {
+    font-size: 140%;
+    padding: 10px;
+}
+
+
+header .navtop a span {
+    display: none;
+    color: white;
+}
+
+header .navtop .container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+/*Fin header nav top */
+
+
+/*Inicio header nav */
+
+header nav {
+    padding: 20px 10px;
+}
+
+header nav:after {
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+header nav .logo {
+    float: left;
+    max-width: 100px;
+}
+
+header nav .hamburguesa {
+    float: right;
+    width: 2em;
+}
+
+header nav .hamburguesa div {
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+
+header nav .menu {
+    padding-top: 60px;
+    text-align: center;
+}
+
+header nav .menu a {
+    text-decoration: none;
+    display: block;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+header nav .menu li:last-child a {
+    border-bottom: 0px solid #aaa;
+}
+
+header nav .menu a:hover,
+header nav .menu .activo {
+    color: var(--colorprincipal);
+}
+
+
+
+
+
+/*Fin header nav */
+
+
+/* Inicio Salto tablet navbar top */
+@media(min-width: 768px) {
+    header .navtop a span {
+        display: inline;
+    }
+
+    header .navtop a i {
+        font-size: 120%;
+    }
+
+    header .navtop .container {
+        justify-content: space-between;
+    }
+}
+
+
+/* Fin Salto tablet navbar top */
+
+
+/* Inicio Menu tablet */
+
+@media(min-width: 1004px) {
+
+    header .hamburguesa {
+        display: none
+    }
+
+    header nav .menu {
+        padding-top: 0;
+        text-align: left;
+        float: right;
+    }
+
+    header nav .menu li {
+        display: inline-block;
+    }
+
+    header nav .menu a {
+        border-bottom: 0px;
+        padding: 0.625em 1.25em;
+    }
+}
