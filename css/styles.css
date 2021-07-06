@@ -324,6 +324,39 @@ main #aboutus figure:hover img {
 
 /* Fin main*/
 
+/* Inicio footer*/
+
+footer {
+    background-color: var(--colorsecundario);
+    color: white;
+    padding: var(--margingrid) 0px;
+    text-align: center;
+    margin-top: calc(2*var(--margingrid));
+}
+
+
+footer a {
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.arriba {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    font-size: 3em;
+}
+
+.arriba a {
+    color: var(--colorprincipal);
+}
+
+/* Fin footer*/
+
 /* Inicio tablet pequeña*/
 
 @media(min-width: 600px) {
@@ -361,6 +394,10 @@ main #aboutus figure:hover img {
     main section .flex article,
     main section .flex article:last-child {
         width: calc(33.333% - (2*var(--margingrid)));
+    }
+
+    footer {
+        text-align: left;
     }
 }
 
