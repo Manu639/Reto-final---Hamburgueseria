@@ -5,6 +5,7 @@
     font-family: 'Handlee', cursive;
     font-family: 'Montserrat', sans-serif;
     color principal: #fa573a
+    color principal transparente: #fa573a80
     color secundario: #21242e
     */
 
@@ -14,6 +15,7 @@
 
     --fuentesecundaria: 'Handlee', cursive;
     --colorprincipal: #fa573a;
+    --colorprincipaltransparente: #fa573ad2;
     --colorsecundario: #21242e;
     --fontsize: 1em;
     --margingrid: 1em;
@@ -214,18 +216,18 @@ main section {
     padding: 2.25em 1em;
 }
 
-main section h2 {
+main h2 {
     color: black;
     font-family: var(--fuentesecundaria);
     font-size: 2em;
     text-align: center;
 }
 
-main section h2 span {
+main h2 span {
     color: var(--colorprincipal);
 }
 
-main section .underline {
+main .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -235,7 +237,7 @@ main section .underline {
     margin-bottom: var(--margingrid);
 }
 
-main section .underline hr {
+main .underline hr {
     position: absolute;
     width: 100%;
     top: 7px;
@@ -322,6 +324,48 @@ main #aboutus figure:hover img {
 }
 
 
+/*Inicio Blog*/
+#blog h1 {
+    display: none;
+}
+
+#blog {
+    padding: 1em;
+}
+
+#blog article:last-child {
+    display: none;
+}
+
+#blog article h3 {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+}
+
+#blog article span {
+    display: inline-block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.date {
+    position: absolute;
+    background-color: var(--colorprincipaltransparente);
+    width: 4em;
+    height: auto;
+    text-align: center;
+}
+
+.date p {
+    color: rgba(255, 255, 255, 0.973);
+    font-weight: 700;
+    margin: 10px;
+}
+
+/*Fin Blog*/
+
 /* Fin main*/
 
 /* Inicio footer*/
@@ -396,11 +440,14 @@ footer a:hover {
         width: calc(33.333% - (2*var(--margingrid)));
     }
 
+    #blog .flex article {
+        width: calc(50% - (2*var(--margingrid)));
+    }
+
     footer {
         text-align: left;
     }
 }
-
 
 /* Inicio tablet grande */
 
@@ -423,5 +470,13 @@ footer a:hover {
     header nav .menu a {
         border-bottom: 0px;
         padding: 0.625em 1.25em;
+    }
+
+    #blog article:last-child {
+        display: block
+    }
+
+    #blog .flex article {
+        width: calc(33.333% - (2*var(--margingrid)));
     }
 }
