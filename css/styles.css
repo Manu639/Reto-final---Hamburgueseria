@@ -48,10 +48,6 @@ body {
     margin: 0 auto;
 }
 
-
-
-
-
 /*Inicio header nav top*/
 
 header .navtop {
@@ -212,6 +208,7 @@ header nav .menu .activo {
 
 /*Inicio main*/
 
+/*Inicio index*/
 main section {
     padding: 2.25em 1em;
 }
@@ -323,14 +320,116 @@ main #aboutus figure:hover img {
     transform: rotateZ(0deg);
 }
 
+/*Fin index*/
 
-/*Inicio Blog*/
-#blog h1 {
-    display: none;
+/*Inicio Menu*/
+#menu {
+    background-color: #21242e;
+    padding: 30px;
 }
 
-#blog {
-    padding: 1em;
+#menu .flex {
+    display: flex;
+}
+
+#menu h2 {
+    color: white;
+}
+
+#menu>div>div:last-child {
+    padding: 20px 50px 0px 50px;
+    flex-direction: column;
+}
+
+#menu>div>div:last-child>div:first-child {
+    flex-direction: column;
+}
+
+#menu .container div:last-child div:first-child nav {
+    padding-bottom: 20px;
+}
+
+.selector li {
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.selector a {
+    text-decoration: none;
+    color: white;
+}
+
+.selector .activado {
+    background-color: #fa573a;
+}
+
+#menu article.flex {
+    flex-direction: column;
+}
+
+#menu article div.flex {
+    flex-wrap: wrap;
+}
+
+#menu .container div:last-child div:last-child {
+    padding-bottom: 20px;
+}
+
+#menu .container div:last-child div:last-child h4 {
+    color: white;
+    font-weight: 700;
+}
+
+#menu .container>div:last-child>div:first-child hr {
+    display: block;
+    width: 50px;
+    border-color: #fa573a;
+    margin: 15px 0;
+}
+
+#menu .container>div:last-child>div:first-child p {
+    color: lightgrey;
+}
+
+#menu div:last-child>div:last-child.flex {
+    flex-direction: column;
+}
+
+#menu article #menu article {
+    padding: 20px;
+}
+
+
+#menu article h3 {
+    display: block;
+    width: 80%;
+    color: white;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+#menu article span {
+    display: block;
+    width: 20%;
+    color: #fa573a;
+    font-weight: 700;
+    padding: 15px 0px 15px 10px;
+}
+
+#menu article p {
+    color: lightgrey;
+    padding-bottom: 15px;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+/*Fin Menu*/
+
+/*Inicio Blog*/
+
+#blog h1 {
+    display: none;
 }
 
 #blog article:last-child {
@@ -420,6 +519,10 @@ footer a:hover {
     main #aboutus .columna {
         width: 50%;
     }
+
+    #menu article span {
+        font-size: 1.5em;
+    }
 }
 
 @media(min-width: 768px) {
@@ -444,9 +547,10 @@ footer a:hover {
         width: calc(50% - (2*var(--margingrid)));
     }
 
-    footer {
-        text-align: left;
+    #menu article span {
+        font-size: 2em;
     }
+
 }
 
 /* Inicio tablet grande */
@@ -479,4 +583,24 @@ footer a:hover {
     #blog .flex article {
         width: calc(33.333% - (2*var(--margingrid)));
     }
+
+    /* 
+    #menu .container>div:last-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #menu .container>div:last-child>div:first-child {
+        width: 20%;
+    }
+
+    #menu .container div:last-child div:first-child div {
+        margin-top: 40px;
+    }
+
+    #menu>div>div:last-child {
+        flex-direction: ro;
+
+    } 
+    */
 }
