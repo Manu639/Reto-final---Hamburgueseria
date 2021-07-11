@@ -583,24 +583,4 @@ footer a:hover {
     #blog .flex article {
         width: calc(33.333% - (2*var(--margingrid)));
     }
-
-    /* 
-    #menu .container>div:last-child {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    #menu .container>div:last-child>div:first-child {
-        width: 20%;
-    }
-
-    #menu .container div:last-child div:first-child div {
-        margin-top: 40px;
-    }
-
-    #menu>div>div:last-child {
-        flex-direction: ro;
-
-    } 
-    */
 }
