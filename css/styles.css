@@ -48,6 +48,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    height: 100%;
+}
+
 /*Inicio header nav top*/
 
 header .navtop {
@@ -345,6 +349,10 @@ main #aboutus figure:hover img {
     flex-direction: column;
 }
 
+#menu>div>div:last-child>div:last-child {
+    flex-direction: column;
+}
+
 #menu .container div:last-child div:first-child nav {
     padding-bottom: 20px;
 }
@@ -392,35 +400,38 @@ main #aboutus figure:hover img {
     color: lightgrey;
 }
 
-#menu div:last-child>div:last-child.flex {
-    flex-direction: column;
+#menu article {
+    padding: 20px;
 }
 
-#menu article #menu article {
-    padding: 20px;
+#menu article figure {
+    max-width: 500px;
 }
 
 
 #menu article h3 {
-    display: block;
-    width: 80%;
+    width: 100%;
     color: white;
     font-weight: 700;
     padding: 15px 0;
 }
 
 #menu article span {
-    display: block;
-    width: 20%;
     color: #fa573a;
     font-weight: 700;
-    padding: 15px 0px 15px 10px;
+    padding-left: 10px;
+    font-size: 1.25em;
 }
 
 #menu article p {
+    width: 100%;
     color: lightgrey;
     padding-bottom: 15px;
     font-size: 0.8em;
+}
+
+#menu a {
+    display: block;
     width: 100%;
 }
 
@@ -429,10 +440,6 @@ main #aboutus figure:hover img {
 /*Inicio Blog*/
 
 #blog h1 {
-    display: none;
-}
-
-#blog article:last-child {
     display: none;
 }
 
@@ -519,10 +526,6 @@ footer a:hover {
     main #aboutus .columna {
         width: 50%;
     }
-
-    #menu article span {
-        font-size: 1.5em;
-    }
 }
 
 @media(min-width: 768px) {
@@ -547,8 +550,8 @@ footer a:hover {
         width: calc(50% - (2*var(--margingrid)));
     }
 
-    #menu article span {
-        font-size: 2em;
+    #blog article:last-child {
+        display: none
     }
 
 }
@@ -583,4 +586,44 @@ footer a:hover {
     #blog .flex article {
         width: calc(33.333% - (2*var(--margingrid)));
     }
+
+    #menu>div>div:last-child {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #menu>div>div:last-child>div:last-child {
+        width: 70%;
+    }
+
+    #menu>div>div:last-child>div:first-child {
+        width: 30%;
+    }
+
+    #menu>div>div:last-child>div:last-child>article {
+        flex-direction: row;
+    }
+
+    #menu article {
+        flex-wrap: wrap;
+    }
+
+    #menu article figure {
+        width: 30%;
+    }
+
+    #menu article div {
+        padding-left: 20px;
+        width: 70%;
+    }
+
+    #menu article span {
+        padding-left: 15px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
 }
