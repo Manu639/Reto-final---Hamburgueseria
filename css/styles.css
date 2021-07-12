@@ -5,6 +5,7 @@
     font-family: 'Handlee', cursive;
     font-family: 'Montserrat', sans-serif;
     color principal: #fa573a
+    color principal transparente: #fa573a80
     color secundario: #21242e
     */
 
@@ -14,6 +15,7 @@
 
     --fuentesecundaria: 'Handlee', cursive;
     --colorprincipal: #fa573a;
+    --colorprincipaltransparente: #fa573ad2;
     --colorsecundario: #21242e;
     --fontsize: 1em;
     --margingrid: 1em;
@@ -45,10 +47,6 @@ body {
     max-width: var(--anchomax);
     margin: 0 auto;
 }
-
-
-
-
 
 /*Inicio header nav top*/
 
@@ -210,22 +208,23 @@ header nav .menu .activo {
 
 /*Inicio main*/
 
+/*Inicio index*/
 main section {
     padding: 2.25em 1em;
 }
 
-main section h2 {
+main h2 {
     color: black;
     font-family: var(--fuentesecundaria);
     font-size: 2em;
     text-align: center;
 }
 
-main section h2 span {
+main h2 span {
     color: var(--colorprincipal);
 }
 
-main section .underline {
+main .underline {
     position: relative;
     width: 100px;
     margin: 0 auto;
@@ -235,7 +234,7 @@ main section .underline {
     margin-bottom: var(--margingrid);
 }
 
-main section .underline hr {
+main .underline hr {
     position: absolute;
     width: 100%;
     top: 7px;
@@ -321,6 +320,150 @@ main #aboutus figure:hover img {
     transform: rotateZ(0deg);
 }
 
+/*Fin index*/
+
+/*Inicio Menu*/
+#menu {
+    background-color: #21242e;
+    padding: 30px;
+}
+
+#menu .flex {
+    display: flex;
+}
+
+#menu h2 {
+    color: white;
+}
+
+#menu>div>div:last-child {
+    padding: 20px 50px 0px 50px;
+    flex-direction: column;
+}
+
+#menu>div>div:last-child>div:first-child {
+    flex-direction: column;
+}
+
+#menu .container div:last-child div:first-child nav {
+    padding-bottom: 20px;
+}
+
+.selector li {
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.selector a {
+    text-decoration: none;
+    color: white;
+}
+
+.selector .activado {
+    background-color: #fa573a;
+}
+
+#menu article.flex {
+    flex-direction: column;
+}
+
+#menu article div.flex {
+    flex-wrap: wrap;
+}
+
+#menu .container div:last-child div:last-child {
+    padding-bottom: 20px;
+}
+
+#menu .container div:last-child div:last-child h4 {
+    color: white;
+    font-weight: 700;
+}
+
+#menu .container>div:last-child>div:first-child hr {
+    display: block;
+    width: 50px;
+    border-color: #fa573a;
+    margin: 15px 0;
+}
+
+#menu .container>div:last-child>div:first-child p {
+    color: lightgrey;
+}
+
+#menu div:last-child>div:last-child.flex {
+    flex-direction: column;
+}
+
+#menu article #menu article {
+    padding: 20px;
+}
+
+
+#menu article h3 {
+    display: block;
+    width: 80%;
+    color: white;
+    font-weight: 700;
+    padding: 15px 0;
+}
+
+#menu article span {
+    display: block;
+    width: 20%;
+    color: #fa573a;
+    font-weight: 700;
+    padding: 15px 0px 15px 10px;
+}
+
+#menu article p {
+    color: lightgrey;
+    padding-bottom: 15px;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+/*Fin Menu*/
+
+/*Inicio Blog*/
+
+#blog h1 {
+    display: none;
+}
+
+#blog article:last-child {
+    display: none;
+}
+
+#blog article h3 {
+    display: inline-block;
+    margin: 20px 0 0 0;
+    font-size: 1.25em;
+}
+
+#blog article span {
+    display: inline-block;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.date {
+    position: absolute;
+    background-color: var(--colorprincipaltransparente);
+    width: 4em;
+    height: auto;
+    text-align: center;
+}
+
+.date p {
+    color: rgba(255, 255, 255, 0.973);
+    font-weight: 700;
+    margin: 10px;
+}
+
+/*Fin Blog*/
 
 /* Fin main*/
 
@@ -376,6 +519,10 @@ footer a:hover {
     main #aboutus .columna {
         width: 50%;
     }
+
+    #menu article span {
+        font-size: 1.5em;
+    }
 }
 
 @media(min-width: 768px) {
@@ -396,11 +543,15 @@ footer a:hover {
         width: calc(33.333% - (2*var(--margingrid)));
     }
 
-    footer {
-        text-align: left;
+    #blog .flex article {
+        width: calc(50% - (2*var(--margingrid)));
     }
-}
 
+    #menu article span {
+        font-size: 2em;
+    }
+
+}
 
 /* Inicio tablet grande */
 
@@ -423,5 +574,13 @@ footer a:hover {
     header nav .menu a {
         border-bottom: 0px;
         padding: 0.625em 1.25em;
+    }
+
+    #blog article:last-child {
+        display: block
+    }
+
+    #blog .flex article {
+        width: calc(33.333% - (2*var(--margingrid)));
     }
 }

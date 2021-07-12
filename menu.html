@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Hamburguesería Rovers</title>
+    <title>Menu Hamburguesería Rovers</title>
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <div class="wrapper" id="top">
+    <div class="wrapper">
         <header>
             <div class="navtop">
                 <div class="container">
@@ -55,74 +56,74 @@
                     </div>
                     <ul class="menu">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a class="activo" href="blog.html">Blog</a></li>
+                        <li><a class="activo" href="menu.html">Menu</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="equipo.html">Equipo</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <main>
-            <section id="blog">
-                <div class="container">
-                    <h1>El Blog de la Hamburguesería Rovers</h1>
-                    <h2>Our <span>blog</span></h2>
-                    <div class="underline">
-                        <hr noshade="noshade">
-                        <span>X</span>
+        <main id="menu">
+            <div class="container">
+                <h2>Today's <span>Menu</span></h2>
+                <div class="underline">
+                    <hr noshade="noshade">
+                    <span>X</span>
+                </div>
+                <div class="flex">
+                    <div class="flex">
+                        <nav class="selector">
+                            <ul>
+                                <li class="activado"><a href="#">Breakfast</a></li>
+                                <li><a href="#">Lunch</a></li>
+                                <li><a href="#">Dinner</a></li>
+                                <li><a href="#">Others</a></li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <h4>Today's Hot Offers</h4>
+                            <hr noshade="noshade">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vel saepe porro quod vero
+                                aperiam doloribus sed quis neque quo.</p>
+                        </div>
                     </div>
                     <div class="flex">
-                        <article>
+                        <article class="flex">
                             <figure>
-                                <div class="date">
-                                    <p>05</p>
-                                    <p>Mar</p>
-                                </div>
-                                <img src="images/news3.jpg" alt="">
+                                <img src="images/t1.jpg" alt="">
                             </figure>
-                            <h3>Our Weekly Best Foods</h3>
-                            <span>Posted by Rovers</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat non ipsa ex.
-                                Minima
-                                ex praesentium sit totam animi. Quaerat!</p>
-                            <span><a class="enlace" href="">Read More
-                                    <i class="fas fa-long-arrow-alt-right"></i></a></span>
+                            <div class="flex">
+                                <h3>Chicken Burger With Cheese and Butter</h3>
+                                <span>$95</span>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                                <a class="enlace" href="#">Order now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
                         </article>
                         <article>
                             <figure>
-                                <div class="date">
-                                    <p>17</p>
-                                    <p>Feb</p>
-                                </div>
-                                <img src="images/news4.jpg" alt="">
+                                <img src="images/t4.jpg" alt="">
                             </figure>
-                            <h3>Top five Reasons to Visit</h3>
-                            <span>Posted by Rovers</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat non ipsa ex.
-                                Minima
-                                ex praesentium sit totam animi. Quaerat!</p>
-                            <span><a class="enlace" href="">Read More <i
-                                        class="fas fa-long-arrow-alt-right"></i></a></span>
+                            <div class="flex">
+                                <h3>Chicken Burger With Cheese and Butter</h3>
+                                <span>$95</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="enlace" href="#">Order now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
                         </article>
                         <article>
                             <figure>
-                                <div class="date">
-                                    <p>28</p>
-                                    <p>Feb</p>
-                                </div>
-                                <img src="images/news1.jpg" alt="">
+                                <img src="images/t3.jpg" alt="">
                             </figure>
-                            <h3>Restaurant's Inside Design</h3>
-                            <span>Posted by Rovers</span>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt fugiat non ipsa ex.
-                                Minima
-                                ex praesentium sit totam animi. Quaerat!</p>
-                            <span><a class="enlace" href="">Read More <i
-                                        class="fas fa-long-arrow-alt-right"></i></a></span>
+                            <div class="flex">
+                                <h3>Chicken Burger With Cheese and Butter</h3>
+                                <span>$95</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <a class="enlace" href="#">Order now <i class="fas fa-long-arrow-alt-right"></i></a>
+                            </div>
                         </article>
                     </div>
                 </div>
-            </section>
+            </div>
         </main>
         <footer>
             <div class="container">
